@@ -1,0 +1,101 @@
+body{
+  background-color: #1167b1;
+   /* background-image: linear-gradient( #abc4ff, #c1d3fe, #ccdbfd,#d7e3fc );  */
+}
+
+.title{
+  font-family: Impact, 'Arial Narrow Bold', sans-serif !important;
+  color: #1167b1 !important;
+  background-color: #abc4ff;
+  margin: 20px !important;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.login {
+    height: 100vh;
+    background: linear-gradient(to bottom left, #1167b1 50%, #abc4ff 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vmax;
+    box-sizing: border-box;
+  }
+
+  .loginForm {
+    height: 80%;
+    width: 35%;
+    background-color: white;
+    border: 3px solid #1167b1;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vmax;
+    
+  }
+  
+  .loginForm > input {
+    box-sizing: border-box;
+    padding: 1vmax 2vmax;
+    width: 85%;
+    border-radius: 40px;
+    border: 1px solid #ccc;
+    /* border: 2px solid #1167b1; */
+    margin: 0.8vmax;
+    font: 100 1.1rem "Roboto", sans-serif;
+    outline: none;
+  }
+
+  .loginForm > input:hover {
+    color: #1167b1;
+    box-shadow: 1px 0px 10px #1167b1;
+  }
+
+  .forgot-p{
+    margin-bottom: 25px;
+  }
+
+  .reg{
+    text-decoration: underline;
+  }
+   
+  .loginForm > a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.342);
+    padding: 0px 5px;
+  }
+
+  .btn{
+    background-color: #abc4ff !important;
+    font-size: large !important;
+    border: 	#1167b1 2px solid !important;
+    box-shadow: 5px 4px #888888 !important;
+    margin-bottom: 20px !important;
+    width: 80%;
+  }
+
+  .btn:hover{
+    background-color: #1167b1 !important;
+    color: white;
+  }
+
+ 
+  @media screen and (max-width: 600px) {
+    .loginForm {
+      width: 100%;
+    }
+  
+    .loginForm > input {
+      padding: 4vw 8vw;
+      margin: 2vmax;
+      font: 100 1.2rem "Roboto", sans-serif;
+      margin: 4vw;
+    }
+  
+    .loginForm > a {
+      align-self: center;
+    }
+  }
+  
