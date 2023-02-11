@@ -200,7 +200,7 @@ const Post = ({
                 />
               ))
             ) : (
-              <Typography>No comments Yet</Typography>
+              <Typography >No comments Yet</Typography>
             )}
           </div>
         </Dialog>

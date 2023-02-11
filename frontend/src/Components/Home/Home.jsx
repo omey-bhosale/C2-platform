@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+// import React, { useEffect } from "react";
 import Post from "../Post/Post";
 import User from "../User/User";
 import "./Home.css";
@@ -7,6 +7,9 @@ import { getAllUsers, getFollowingPosts } from "../../Actions/User";
 import Loader from "../Loader/Loader";
 import { Typography } from "@mui/material";
 import { useAlert } from "react-alert";
+import {  Button } from "@mui/material";
+import React, { useEffect, useState } from "react";
+// import { deleteMyProfile, getMyPosts, logoutUser } from "../../Actions/User";
 
 const Home = () => {
     const dispatch = useDispatch();
@@ -21,6 +24,36 @@ const Home = () => {
   );
 
   const { error: likeError, message } = useSelector((state) => state.like);
+  // const {
+  //   error: likeError,
+  //   message,
+  //   loading: deleteLoading,
+  // } = useSelector((state) => state.like);
+
+
+
+  // --
+ 
+
+  // const { user, loading: userLoading } = useSelector((state) => state.user);
+ 
+  // const [followersToggle, setFollowersToggle] = useState(false);
+
+  // const [followingToggle, setFollowingToggle] = useState(false);
+  // const logoutHandler = () => {
+  //   dispatch(logoutUser());
+  //   alert.success("Logged out successfully");
+  // };
+
+  // const deleteProfileHandler = async () => {
+  //   await dispatch(deleteMyProfile());
+  //   dispatch(logoutUser());
+  // };
+
+
+  // --
+
+
 
   useEffect(() => {
     dispatch(getFollowingPosts());
@@ -69,6 +102,18 @@ const Home = () => {
      
      
         </div>
+        {/* <Button variant="contained" className="log" onClick={logoutHandler}>
+          Logout
+        </Button> */}
+
+{/* <Button
+          variant="text"
+          style={{ color: "white", margin: "2vmax", background:"red" }}
+          onClick={deleteProfileHandler}
+          disabled={deleteLoading}
+        >
+          Delete My Profile
+        </Button> */}
          <div className="homeright">
         {users && users.length > 0 ? (
           users.map((user) => (
@@ -81,6 +126,7 @@ const Home = () => {
           ))
         ) : (
           <Typography>No Users Yet</Typography>
+          
         )}
       </div>
     </div>

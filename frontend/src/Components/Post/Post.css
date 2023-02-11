@@ -1,10 +1,9 @@
 .post {
-    width: 60%;
+    width: 30%;
     background-color: #fff;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 0 1vmax 2vmax;
-    margin: 2vmax;
+    padding: 0 1vmax 1vmax;
+    margin: 0.5vmax;
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.761) !important;
   }
   
@@ -12,7 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 1vmax;
+    padding: 0.5vmax;
   }
   .postHeader > button {
     border-radius: 100%;
@@ -21,11 +20,12 @@
   
   .post > img {
     width: 100%;
+    height: fit-content;
   }
   
   .postDetails {
     display: flex;
-    padding: 1vmax;
+    padding: 0.2vmax;
   }
   
   .postDetails > a {
@@ -36,7 +36,7 @@
   
   .postFooter > button {
     color: rgba(0, 0, 0, 0.767);
-    margin: 0 1vmax;
+    margin: 0 0.5vmax;
     border-radius: 100%;
     transition: all 0.3s;
   }
@@ -57,7 +57,9 @@
   .commentForm {
     display: flex;
     margin: 1vmax;
+    
   }
+
   .commentForm > input {
     width: 100%;
     padding: 1vmax 2vmax;
