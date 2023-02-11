@@ -20,14 +20,20 @@
     padding: 3vmax;
     box-sizing: border-box;
     overflow-y: auto;
-    background-color: #d7e3fc;
+    
+    /* background-color: #d7e3fc; */
   }
   
+  .homeright div{
+    color: white !important;
+    background-color: rebeccapurple;
+  }
+
   .homeUser {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.507);
+    color: white;
     transition: all 0.5s;
 
   }

@@ -114,25 +114,29 @@ const UserProfile = () => {
               sx={{ height: "8vmax", width: "8vmax" }}
             />
 
-            <Typography variant="h5">{user.name}</Typography>
+            <Typography style={{ color: "#fff", padding:"1vmax"}} variant="h5">{user.name}</Typography>
 
             <div>
               <button onClick={() => setFollowersToggle(!followersToggle)}>
                 <Typography>Followers</Typography>
               </button>
-              <Typography>{user.followers.length}</Typography>
+              <Typography style={{ color: "#fff", padding:"0.5vmax 0.5vmax"}}>
+                {user.followers.length}</Typography>
             </div>
 
             <div>
               <button onClick={() => setFollowingToggle(!followingToggle)}>
                 <Typography>Following</Typography>
               </button>
-              <Typography>{user.following.length}</Typography>
+              <Typography style={{ color: "#fff", padding:"0.5vmax 0.5vmax"}}
+              >{user.following.length}</Typography>
             </div>
 
             <div>
-              <Typography>Posts</Typography>
-              <Typography>{user.posts.length}</Typography>
+              <Typography style={{ background: "#ccdbfd", padding:"0.5vmax 0.5vmax" }}
+              >Posts</Typography>
+              <Typography style={{ color: "#fff", padding:"0.5vmax 0.5vmax"}}
+              >{user.posts.length}</Typography>
             </div>
 
             {myProfile ? null : (

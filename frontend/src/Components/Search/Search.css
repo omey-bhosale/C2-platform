@@ -10,7 +10,8 @@
 }
 
 .searchForm {
-  background-color: white;
+  /* background-color: white; */
+  background-color: #ccdbfd;
   height: 100%;
   width: 40%;
  
@@ -41,6 +42,8 @@
   padding: 2vmax;
   box-sizing: border-box;
   margin: 2vmax;
+  background-color: #abc4ff;
+
 }
 
 @media screen and (max-width: 600px) {

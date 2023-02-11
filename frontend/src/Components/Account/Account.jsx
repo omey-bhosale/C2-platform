@@ -79,6 +79,9 @@ const Account = () => {
           <Typography variant="h6">You have not made any post</Typography>
         )}
       </div>
+
+
+      
       <div className="accountright">
         <Avatar
         className="avatar"
@@ -87,11 +90,42 @@ const Account = () => {
         />
 
         <Typography variant="h5"
-        style={{ color: "white", margin: "1vmax" }}
+        style={{ color: "white", margin: "0.5vmax" }}
         >{user.name}
         </Typography>
 
+<div className="follow">
+ <div>
         <div>
+          <button onClick={() => setFollowersToggle(!followersToggle)}>
+            <Typography style={{ background: "#ccdbfd", padding:"0.5vmax" }}
+            >Followers</Typography>
+          </button>
+          <Typography style={{ color: "#fff"}}
+          >{user.followers.length}</Typography>
+        </div>
+
+        <div>
+          <button onClick={() => setFollowingToggle(!followingToggle)}>
+            <Typography style={{ background: "#ccdbfd", padding:"0.5vmax" }}
+            >Following</Typography>
+          </button>
+          <Typography style={{ color: "#fff"}}
+          >{user.following.length}</Typography>
+        </div>
+
+        <div>
+          <Typography
+           style={{ background: "#ccdbfd", padding:"0.5vmax" }}
+          >Posts</Typography>
+          <Typography style={{ color: "#fff"}}
+          >{user.posts.length}</Typography>
+        </div>
+  </div>
+</div>
+
+
+        {/* <div>
           <button onClick={() => setFollowersToggle(!followersToggle)}>
             <Typography>Followers</Typography>
           </button>
@@ -103,14 +137,15 @@ const Account = () => {
             <Typography>Following</Typography>
           </button>
           <Typography>{user.following.length}</Typography>
-        </div>
+        </div> */}
 
-        <div>
+        {/* <div>
           <Typography
            style={{ background: "#ccdbfd", padding:"0.5vmax 1vmax" }}
           >Posts</Typography>
-          <Typography>{user.posts.length}</Typography>
-        </div>
+          <Typography style={{ color: "#fff"}}
+          >{user.posts.length}</Typography>
+        </div> */}
 
         <Button variant="contained" className="log" onClick={logoutHandler}>
           Logout

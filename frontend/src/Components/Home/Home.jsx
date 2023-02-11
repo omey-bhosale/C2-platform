@@ -114,7 +114,7 @@ const Home = () => {
         >
           Delete My Profile
         </Button> */}
-         <div className="homeright">
+         <div className="homeright" >
         {users && users.length > 0 ? (
           users.map((user) => (
             <User
