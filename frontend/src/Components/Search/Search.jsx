@@ -35,7 +35,7 @@ const Search = () => {
           Search
         </Button>
 
-        <div className="searchResults">
+        <div className="searchResults" >
           {users &&
             users.map((user) => (
               <User

@@ -97,29 +97,32 @@ const Account = () => {
 <div className="follow">
  <div>
         <div>
+        <Typography style={{ color: "#fff"}}
+          >{user.followers.length}</Typography>
           <button onClick={() => setFollowersToggle(!followersToggle)}>
             <Typography style={{ background: "#ccdbfd", padding:"0.5vmax" }}
             >Followers</Typography>
           </button>
-          <Typography style={{ color: "#fff"}}
-          >{user.followers.length}</Typography>
+          
         </div>
 
         <div>
+        <Typography style={{ color: "#fff"}}
+          >{user.following.length}</Typography>
           <button onClick={() => setFollowingToggle(!followingToggle)}>
             <Typography style={{ background: "#ccdbfd", padding:"0.5vmax" }}
             >Following</Typography>
           </button>
-          <Typography style={{ color: "#fff"}}
-          >{user.following.length}</Typography>
+         
         </div>
 
         <div>
+        <Typography style={{ color: "#fff"}}
+          >{user.posts.length}</Typography>
           <Typography
            style={{ background: "#ccdbfd", padding:"0.5vmax" }}
           >Posts</Typography>
-          <Typography style={{ color: "#fff"}}
-          >{user.posts.length}</Typography>
+         
         </div>
   </div>
 </div>
